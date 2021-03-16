@@ -1,0 +1,140 @@
+<div class="bg-container">
+  <div class="grid">
+    <div class="header-item">
+      <app-header></app-header>
+    </div>
+    <div class="grid-item1">
+      <div class="video-section">
+        <div class="tag-line">We make it Super Simple
+          <hr />
+        </div>
+
+        <img class="video-img" src="assets/images/collect_img-video.png" width="80%" />
+      </div>
+    </div>
+
+    <div class="grid-item2">
+      <div class="calc-section">
+        <div class="calc-box">
+          <div class="heading-item">
+            <span style="vertical-align: middle;">Eligibility Calculator</span>
+          </div>
+          <div class="income-item">
+            <span class="calc-label">Monthly Income</span>
+            <span class="calc-cost">{{income | currency: 'INR' }}</span>
+            <input class="sliderinput" id="incomeSlider" [min]="minIncome" [max]="maxIncome" type="range"
+              [value]="income" (input)="getValue($event)" />
+            <span class="calc-label-xs">
+              <p>{{minIncome | currency: 'INR' }}</p>
+              <p>{{maxIncome |currency: 'INR'}}</p>
+            </span>
+
+          </div>
+          <div class="expense-item">
+            <span class="calc-label">Monthly Expense</span>
+            <span class="calc-cost">{{expense | currency: 'INR' }}</span>
+            <input class="sliderinput" id="expenseSlider" [min]="minExpense" [max]="maxExpense" type="range"
+              [value]="expense" (input)="getValue($event)" />
+          </div>
+          <div class="tenure-item">
+            <span class="calc-label">Repayment Tenure</span>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle dropdownBtn" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                6 months
+              </button>
+            </div>
+
+
+          </div>
+          <div class="toggle-item">
+            <span class="calc-label">Do you have any existing loans?</span>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="toggle-slider round"></span>
+            </label>
+
+          </div>
+          <div class="emi-item">
+            <span class="calc-label">EMI of existing loan (optional)</span>
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" style="border: none;
+              border-bottom: 1px solid #ced4da;" value="{{'15000'| currency:'INR'}}" aria-describedby="emi">
+              </div>
+            </form>
+
+          </div>
+        </div>
+        <div class="loan-box">
+          <div class="flex-column"><span style="font-weight: 100;">Loan Amount</span><span
+              style="font-weight: 500;">{{'100000' | currency:'INR'}}</span></div>
+          <div class="flex-column"><span style="font-weight: 100;">Your EMI will be</span><span
+              style="font-weight: 500;">{{'15000' | currency:'INR'}}</span></div>
+          <button type="button" class="btn btn-outline-primary money-btn">GET MONEY</button>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-item3">
+      <div class="card-layout">
+        <div class="card1">
+          <div>
+            <img width="30%" style="margin-bottom: 2vh;" src="assets/images/Get Paid Instantly.png" />
+
+          </div>
+          <div><span class=card-heading>Quick cash disbursement</span></div>
+          <div><span class=card-desc>Get terms loans that your business needs within 72 hrs</span></div>
+        </div>
+        <div class="card2">
+          <div>
+            <img width="30%" style="margin-bottom: 2vh;" src="assets/images/freelancer_feature_icon_6@1.5x.png" />
+
+          </div>
+          <div><span class=card-heading>Ace your business finances</span></div>
+          <div><span class=card-desc>Manage banking, accounting & everything in between, on one platform</span></div>
+        </div>
+        <div class="card3">
+          <div>
+            <img width="30%" style="margin-bottom: 2vh;" src="assets/images/Low interest rate.png" />
+
+          </div>
+          <div><span class=card-heading>Low-interest rate</span></div>
+          <div><span class=card-desc>Achieve your financial goals with an amazing interest rate starting at 13% per
+              annum</span></div>
+          <!-- </div> -->
+        </div>
+        <div class="card4">
+          <div>
+            <img width="30%" style="margin-bottom: 2vh;" src="assets/images/Covid.png" />
+
+          </div>
+          <div><span class=card-heading>Loans to fight COVID-19</span></div>
+          <div><span class=card-desc>Zero EMI for first 3 months on Back-to-Business loans of upto 1 lakh</span></div>
+        </div>
+        <div class="card5">
+          <div>
+            <img width="30%" style="margin-bottom: 2vh;" src="assets/images/Secure Payments.png" />
+
+          </div>
+          <div><span class=card-heading>Zero Paperwork</span></div>
+          <div><span class=card-desc>Get started instantly by submitting only your basic details & bank
+              statements</span> </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="grid-item4">
+      <div class="tag-line">Boost your business with Open
+        <hr style="width:20%" />
+      </div>
+      <div style="padding:2vw;font-size: 0.8em">
+        <span>Get your hands on a term loan that's crafted for your business</span>
+      </div>
+      <div style="padding:2vw;"><button  type="button" class="btn btn-outline-primary acc-btn">Get an Open Account</button></div>
+
+    </div>
+  </div>
+</div>
