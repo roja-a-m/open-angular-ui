@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-	 "deploy": "ng build --base-href https://roja-a-m.github.io/open-angular-ui && angular-cli-ghpages --branch main"
+	 "deploy": "ng build --prod --base-href https://roja-a-m.github.io/open-angular-ui/ && angular-cli-ghpages --branch main"
   },
   "private": true,
   "dependencies": {
