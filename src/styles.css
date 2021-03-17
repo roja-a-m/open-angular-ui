@@ -19,4 +19,16 @@ body{
     font-family: 'Montserrat', sans-serif;
     color: #222222;
     background: #FCFCFF 0% 0% no-repeat padding-box;
+} .btn:active{
+    border: none !important;
+    box-shadow: none !important;
+    background: none !important;
+    outline: none !important;
+}
+
+.btn:focus{
+    outline: none !important;
+    box-shadow: none !important;
+
+    
 }
